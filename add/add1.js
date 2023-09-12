@@ -5,5 +5,4 @@ function addUpTo(n) {
   }
   return total;
 }
-
-console.log(addUpTo(6))
+console.log(addUpTo(10))
