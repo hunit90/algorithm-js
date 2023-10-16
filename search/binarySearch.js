@@ -1,20 +1,16 @@
-const binarySearch = function (arr, target) {
+function binarySearch(arr, find) {
   let start = 0;
-  let end = arr.length-1
-  let mid
+  let end = arr.length - 1;
 
   while (start <= end) {
-    mid = parseInt((start*end) / 2)
+    const mid = start + Math.floor((end - start) / 2)
 
-    if (target === arr[mid]) {
-      return mid;
-    } else {
-      if (target < arr[mid]) {
-        end = mid - 1
-      } else {
-        start = mid + 1
-      }
+    if (arr[mid] === find) {
+      return `탐색(find)의 인덱스: ${mid}`
     }
+    arr[mid] < find ? (start = mid + 1) : (end = mid - 1)
   }
-  return -1
+  return
 }
+
+console.log(binarySearch([4,2,6,5,1], 6))
