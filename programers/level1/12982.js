@@ -37,14 +37,14 @@
 function solution(d, budget) {
     d.sort((a, b) => a - b);
     let sum = 0;
-    let i = 0;
+    let count = 0;
 
     while (sum <= budget) {
-        sum += d[i];
-        i++;
+        sum += d[count];
+        count++;
     }
 
-    return i - 1;
+    return count - 1;
 }
 
 solution([1,3,2,5,4], 9);
