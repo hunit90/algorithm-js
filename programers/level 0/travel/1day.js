@@ -20,3 +20,14 @@
  *
  * numbers의 원소들의 평균 값은 94.0입니다.
  */
+
+function solution(numbers) {
+    let x = 0
+    for(num of numbers) {
+        x += num
+    }
+
+    return x/numbers.length
+}
+
+console.log([1,2,3,4,5,6,7,8,9,10])
