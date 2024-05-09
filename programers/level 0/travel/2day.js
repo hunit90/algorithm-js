@@ -27,3 +27,10 @@
  *
  * angle이 180이므로 평각입니다. 따라서 4를 return합니다.
  */
+
+function solution(angle) {
+    if (0 < angle < 90) return 1
+    else if (angle === 90) return 2
+    else if (90 < angle < 180) return 3
+    else if (angle === 180) return 4
+}
