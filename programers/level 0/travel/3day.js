@@ -19,3 +19,10 @@
  *
  * n이 4이므로 2 + 4 = 6을 return 합니다.
  */
+function solution(n){
+    let answer = 0
+    if (n%2===0) {
+        answer += n
+    }
+    return answer
+}
