@@ -19,3 +19,18 @@
  *
  * [1, 3, 5, 7]에는 짝수가 없고 홀수가 네 개 있습니다.
  */
+function solution(num_list) {
+    let evan = 0
+    let odd = 0
+    for (x of num_list) {
+        if (x % 2 === 0){
+            evan++
+        } else {
+            odd++
+        }
+    }
+    let answer =[]
+    answer.push(evan, odd)
+
+    return answer
+}
