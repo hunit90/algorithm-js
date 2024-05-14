@@ -20,3 +20,11 @@
  *
  * 180, 120, 140 중 190보다 큰 수는 없으므로 0명입니다.
  */
+
+function solution(array, height){
+    let count = 0
+    for (x of array){
+        if (x > height) count++   
+    }
+    
+}
