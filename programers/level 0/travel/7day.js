@@ -20,3 +20,7 @@
  *
  * 9, -1, 0을 오름차순 정렬하면 -1, 0, 9이고 가장 중앙에 위치하는 값은 0입니다.
  */
+function solution(array){
+    array.sort((a,b) => a-b)
+    return array[(array.lengh / 2) + 1]
+}
