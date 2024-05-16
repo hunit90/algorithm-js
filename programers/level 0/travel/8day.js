@@ -18,3 +18,12 @@
  *
  * 15 이하의 홀수가 담긴 배열 [1, 3, 5, 7, 9, 11, 13, 15]를 return합니다.
  */
+function solution(n) {
+    let answer = []
+    for (let i=0; i < n; i++){
+        if (n % 2 !== 1) {
+            answer.push(i)
+        }
+    }
+    return answer
+}
