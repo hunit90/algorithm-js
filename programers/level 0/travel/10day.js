@@ -32,3 +32,4 @@ function solution(price){
     return price
 }
 console.log(solution(10000))
+test
