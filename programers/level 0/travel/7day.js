@@ -22,5 +22,8 @@
  */
 function solution(array){
     array.sort((a,b) => a-b)
-    return array[(array.lengh / 2) + 1]
+    let a = parseInt(array.length / 2)
+    return array[a]
 }
+
+console.log(solution([9, -1, 0]))

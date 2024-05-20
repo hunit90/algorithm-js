@@ -22,13 +22,12 @@
  * 580,000원에서 20%를 할인한 464,000원을 return 합니다.
  */
 function solution(price){
-    if(price <= 100000 && price > 300000){
-        price = price * 0.95
-    } else if (price <=200000 && price > 500000) {
-        price *= 0.8
-    } else if (price<=500000){
-        price *= 0.7
-    }
-    return price
+    if (price >= 500000) {
+        return Math.floor(price * 0.8)
+    } else if (price >= 300000) {
+        return Math.floor(price * 0.9)
+    } else if (price >= 100000) {
+        return Math.floor(price * 0.95)
+    } else return price
 }
-console.log(solution(10000))
+console.log(solution(150000))

@@ -26,5 +26,6 @@ function solution(array, height){
     for (x of array){
         if (x > height) count++   
     }
-    
+
+    return count
 }

@@ -23,5 +23,7 @@
  * 15명이 최소 한 조각씩 먹기 위해서 최소 3판이 필요합니다.
  */
 function solution(n){
-    return n % 7
+    return (Math.ceil(n / 7))
 }
+
+console.log(solution(15))

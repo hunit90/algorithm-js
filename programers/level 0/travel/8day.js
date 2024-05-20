@@ -20,10 +20,13 @@
  */
 function solution(n) {
     let answer = []
-    for (let i=0; i < n; i++){
-        if (n % 2 !== 1) {
+    for (let i = 1; i <= n; i++){
+        if (i % 2 !== 0) {
+            console.log(i)
             answer.push(i)
         }
     }
     return answer
 }
+
+console.log(solution(15))
