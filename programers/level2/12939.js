@@ -15,8 +15,9 @@
 function solution(s) {
     let answer = '';
     let x = s.split(' ')
-
-
+    x.sort((a, b) => a - b)
+    answer = `${x[0]} ${x[x.length - 1]}`
+    return answer
 }
 
-console.log(solution('1 2 3 4'));
+console.log(solution('-1 -2 -3 -4'));
