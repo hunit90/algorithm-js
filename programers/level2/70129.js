@@ -43,6 +43,16 @@
  * 4번의 이진 변환을 하는 동안 1개의 0을 제거했으므로, [4,1]을 return 해야 합니다.
  */
 function solution(s) {
-    var answer = [];
+    var answer = [0,0];
+    let sLen = 0;
+    while(s.length > 1){
+        sLen = s.length;
+        s = s.split('0').join('');
+        answer[0]++;
+        answer[1] += (sLen - s.length);
+        s = s.length.toString(2)
+    }
     return answer;
 }
+
+console.log(solution("110010101001"))
