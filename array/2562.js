@@ -4,4 +4,13 @@
  * 3, 29, 38, 12, 57, 74, 40, 85, 61
  * 이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
  */
-test
+function solution(n) {
+    let arr = n;
+    let answer = []
+
+    arr.sort((a, b) => b - a);
+    answer = [arr[0], arr.filter(arr[0])]
+    return answer;
+}
+
+solution([3, 29, 38, 12, 57, 74, 40, 85, 61])
