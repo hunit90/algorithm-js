@@ -19,19 +19,17 @@
  * 문제의 예시와 같습니다.
  */
 function solution(s){
-    let stack = 0;
-    for (const char of s) {
-        if (char === '(') {
-            stack++;
-        } else {
-            stack--;
+    let answer = 0;
+    for (let i = 0; i < s.length; i++){
+        if (s[i] === '(') {
+            answer++;
         }
-        if (stack < 0) {
-            return false;
+        if (s[i] === ')'){
+            answer--;
         }
-        console.log(stack)
+        if (answer < 0) return false;
     }
-    return !stack;
+    return answer === 0 ? true : false;
 }
 
-console.log(solution('(()('))
+solution('(()(');
