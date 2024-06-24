@@ -21,8 +21,6 @@
  * 예제 2번의 my_string은 "    programmers  "로 단어는 "programmers" 하나만 있습니다. 따라서 ["programmers"]를 return 합니다.
  */
 function solution(my_string) {
-    var answer = [];
-    console.log(my_string.split(' ').filter(a => console.log(a)));
     return my_string.split(' ').filter(a => a !== '');
 }
 
