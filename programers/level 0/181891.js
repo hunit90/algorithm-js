@@ -19,10 +19,8 @@
  */
 
 function solution(num_list, n) {
-    let answer = [];
-    answer += num_list.slice(n);
-    answer += ',' + num_list.slice(0,n);
-    return answer.split(',').map(Number);
+    num_list.push(...num_list.splice(0, n));
+    return num_list
 }
 
-solution([5, 2, 1, 7, 5],3)
+console.log(solution([5, 2, 1, 7, 5], 5))
