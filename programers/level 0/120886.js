@@ -18,10 +18,7 @@
  */
 
 function solution(before, after) {
-  let answer = 0;
-  let reverseStr = before.split('').reverse().join('');
-  if (reverseStr === after) answer = 1;
-  return answer;
+  return before.split('').sort().join('') === after.split('').sort().join('') ? 1 : 0;
 }
 
 solution('olleh', 'hello')
